@@ -8,8 +8,7 @@ document.getElementById('btn-login').addEventListener('click', function() {
     alert('লগইন সফল হয়েছে!');
         window.location.href = 'dashboard.html';
       } 
-    else {
-        
+    else {     
         message.innerText = 'ভুল ইমেইল অথবা পাসওয়ার্ড! আবার চেষ্টা করুন।';
         emailField.style.borderColor = 'red';
         passwordField.style.borderColor = 'red';
