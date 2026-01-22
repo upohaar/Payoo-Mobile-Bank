@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; }
+        .navbar { background-color: #007bff; color: white; padding: 1rem; text-align: center; font-size: 24px; font-weight: bold; }
+        .container { padding: 50px; text-align: center; }
+        .welcome-card { background: white; padding: 30px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { color: #666; font-size: 18px; }
+        .btn-logout { background-color: #ff4757; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 20px; transition: 0.3s; }
+        .btn-logout:hover { background-color: #e84118; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">My Application Dashboard</div>
+
+    <div class="container">
+        <div class="welcome-card">
+            <h1>স্বাগতম, এডমিন! 👋</h1>
+            <p>আপনি সফলভাবে লগইন করেছেন। এখন আপনি ড্যাশবোর্ড এক্সেস করতে পারছেন।</p>
+            <button class="btn-logout" id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        // লগআউট বাটনের কাজ
+        document.getElementById('logout-btn').addEventListener('click', function() {
+            const confirmLogout = confirm("আপনি কি নিশ্চিতভাবে লগআউট করতে চান?");
+            if (confirmLogout) {
+                // আবার লগইন পেজে পাঠিয়ে দেবে
+                window.location.href = 'index.html'; 
+            }
+        });
+    </script>
+
+</body>
+</html>
