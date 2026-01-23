@@ -6,7 +6,7 @@ document.getElementById('btn-login').addEventListener('click', function() {
     const password = passwordField.value;
   if (email === 'admin@test.com' && password === '1234') {
     alert('লগইন সফল হয়েছে!');
-        window.location.href = 'dashboard.html';
+        window.location.href = 'home.html';
       } 
     else {     
         message.innerText = 'ভুল ইমেইল অথবা পাসওয়ার্ড! আবার চেষ্টা করুন।';
