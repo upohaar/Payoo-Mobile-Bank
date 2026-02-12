@@ -41,3 +41,13 @@ for (;cars[i];) {
   text += cars[i];
   i++;
 }
+
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let k = 0;
+let textt = "";
+
+while (cars[i]) {
+  text += cars[i];
+  i++;
+}
