@@ -13,3 +13,8 @@ let i = 5;
 for (let i = 0; i < 10; i++) {
   // some code
 }
+
+while (i < 10) {
+  text += "The number is " + i;
+  i++;
+}
