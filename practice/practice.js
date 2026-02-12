@@ -51,3 +51,10 @@ while (cars[i]) {
   text += cars[i];
   i++;
 }
+
+
+let y = 15, x = '';
+do {
+  x += 'The number is ' + i;
+}
+while (i < 10);
